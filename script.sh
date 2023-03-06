@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#script to show installed Linux, Apache, MySQL, PHP (LAMP) version.
+
 # Output Apache version
 echo "Apache version:"
 apache2 -v
