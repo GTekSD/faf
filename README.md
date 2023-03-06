@@ -1,2 +1,2 @@
-# fast
+# Fuck Scripts
 fast as fuck access
