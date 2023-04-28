@@ -1,19 +1,21 @@
+#Tool for Network PT by GTekSD
+
 import os
 
 def run_nmap_script(script_cmd):
     os.system(script_cmd)
 
 def display_menu():
-    print("Select a vulnerability to scan:")
-    print("1. Microsoft SQL Server Unsupported Version Detection")
-    print("2. Redis Server Unprotected by Password Authentication")
-    print("3. SSL Version 2 and 3 Protocol Detection")
-    print("4. TLS Version 1.0 Protocol Deprecated")
-    print("5. TLS Version 1.1 Protocol Deprecated")
-    print("6. SSL Certificate Signed Using Weak Hashing Algorithm")
-    print("7. SSL Medium Strength Cipher Suites Supported (SWEET32)")
-    print("8. SSL Certificate Chain Contains RSA Keys Less Than 2048 bits")
-    print("9. OpenSSL AES-NI Padding Oracle MitM Information Disclosure")    
+    print("[i] Select a vulnerability to scan:")
+    print(" 1. Microsoft SQL Server Unsupported Version Detection")
+    print(" 2. Redis Server Unprotected by Password Authentication")
+    print(" 3. SSL Version 2 and 3 Protocol Detection")
+    print(" 4. TLS Version 1.0 Protocol Deprecated")
+    print(" 5. TLS Version 1.1 Protocol Deprecated")
+    print(" 6. SSL Certificate Signed Using Weak Hashing Algorithm")
+    print(" 7. SSL Medium Strength Cipher Suites Supported (SWEET32)")
+    print(" 8. SSL Certificate Chain Contains RSA Keys Less Than 2048 bits")
+    print(" 9. OpenSSL AES-NI Padding Oracle MitM Information Disclosure")    
     print("10. SMB Signing not required")
     print("11. SSL Certificate Expiry")
     print("12. SSL / TLS Versions Supported")
@@ -32,7 +34,8 @@ def display_menu():
     print("25. DHCP Server Detection")
     print("26. Unencrypted Telnet Server")
 
-    choice = int(input("Enter vulnerability number: "))
+    choice = int(input("\n[i] Enter vulnerability number: "))
+    
     if choice == 1:
         script_cmd = "nmap -p 445 --script ms-sql-info"
     elif choice == 2:
@@ -89,9 +92,14 @@ def display_menu():
         print("Invalid choice.")
         return
 
-    host = input("Enter IP address to scan: ")
+    host = input("[|] Enter IP address to scan: ")
     script_cmd = f"{script_cmd} {host}"
+
+    print("\n[i] CMD ======================================================================================================" )
+    print(script_cmd)
+    print("\n[i]  =========================================================================================================" )
 
     run_nmap_script(script_cmd)
 
 display_menu()
+
