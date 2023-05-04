@@ -1,0 +1,8 @@
+Parent_Dir1/Sub_dir11
+Parent_Dir1/Sub_dir12
+
+Parent_Dir2/Sub_dir21
+Parent_Dir2/Sub_dir22
+Parent_Dir2/Sub_dir23
+
+Parent_Dir3/Sub_dir31
