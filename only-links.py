@@ -1,6 +1,7 @@
+#!/bin/python3.11
+
 # This script reads the content of the specified input_file, extracts all the links using regular expressions, and then processes the links based on the provided options. The extracted links are written to the output_file. You can use the options -d and -s to customize the behavior of the script.
 # python only-links.py input_file output_file [-d] [-s]
-
 
 import re
 import argparse
