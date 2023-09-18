@@ -31,7 +31,7 @@ def rename_files(directory):
             # Get the file extension
             extension = os.path.splitext(file)[1]
             # Define the new filename
-            new_filename = f"Fig.{count+1} {prefix}{extension}"
+            new_filename = f"Figure.{count+1} {prefix}{extension}"
             # Get the full path to the file
             old_path = os.path.join(directory, file)
             new_path = os.path.join(directory, new_filename)
