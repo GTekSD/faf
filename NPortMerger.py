@@ -1,11 +1,12 @@
 #!/usr/bin/env python
-
+# Author: Сухас Дхолз
+# Link: https://github.com/GTekSD/
 import argparse
 import pyperclip
 import re
 
-def display_logo():
-    logo = """
+def display_gteksd():
+    gteksd = """
  _____            _    _____                          
 |  _  |NESSUS___ | |_ |     | ___  ___  ___  ___  ___ 
 |   __|| . ||  _||  _|| | | || -_||  _|| . || -_||  _|
@@ -14,7 +15,7 @@ def display_logo():
             https://gteksd.github.io/
 ------------------------------------------------------
     """
-    print(logo)
+    print(gteksd)
 
 def parse_input_file(file):
     data = {}
@@ -61,12 +62,12 @@ def main():
     parser = argparse.ArgumentParser(description="""The Nessus Port Merger is designed to merge and sort port listed for domains/IP addresses provided in an input file. The script removes duplicates, sorts the ports in ascending order, and displays the merged ports for each domain/IP.""")
     parser.add_argument("input_file", help="Input file containing domain names or IP addresses with ports, it can be in any format")
     parser.add_argument("-cp", "--copy", action="store_true", help="Copy output result to clipboard")
-    parser.add_argument("--silent", action="store_true", help="Suppress logo/banner display")
+    parser.add_argument("--silent", action="store_true", help="Suppress gteksd/banner display")
 
     args = parser.parse_args()
 
     if not args.silent:
-        display_logo()
+        display_gteksd()
 
     try:
         data = parse_input_file(args.input_file)
