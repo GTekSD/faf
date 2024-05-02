@@ -5,7 +5,7 @@ usage() {
     echo "Usage: $0 <command> <filename>"
     echo "  -h, --help    Display this help message."
     echo ""
-    echo "Developed by Сухас Дхолз | GtekSD."
+    echo "Developed by Сухас Дхолз | GTekSD."
     echo "Website: https://gteksd.github.io"
     exit 1
 }
