@@ -1,4 +1,6 @@
 #!/bin/bash
+# Author: Сухас Дхолз
+# Link: https://github.com/GTekSD/
 
 # Function to display usage information
 usage() {
